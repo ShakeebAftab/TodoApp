@@ -1,5 +1,5 @@
 import { createTheme } from "@material-ui/core";
-import { blue } from "@material-ui/core/colors";
+import { blue, green, red } from "@material-ui/core/colors";
 
 export const primaryTheme = createTheme({
     palette: {
@@ -16,18 +16,32 @@ export const primaryTheme = createTheme({
     }
 })
 
-export const coldTheme = createTheme({
+export const hotTheme = createTheme({
     palette: {
+        primary: {
+            main: red[900]
+        },
+        secondary: {
+            main: red[300]
+        },
         background: {
-            default: 'blue'
+            default: '#171717',
+            paper: '#3b3b3b'
         }
     }
 })
 
-export const hotTheme = createTheme({
+export const coldTheme = createTheme({
     palette: {
+        primary: {
+            main: green[900]
+        },
+        secondary: {
+            main: green[600]
+        },
         background: {
-            default: 'red'
+            default: '#171717',
+            paper: '#3b3b3b'
         }
     }
 })

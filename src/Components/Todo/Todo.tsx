@@ -1,8 +1,6 @@
 import React, { useState, FC } from 'react';
-import { makeStyles, Card, CardHeader, Checkbox, IconButton, withStyles, Typography } from '@material-ui/core';
-import { red } from '@material-ui/core/colors';
+import { makeStyles, Card, CardHeader, Checkbox, IconButton, Typography } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { CheckBox } from '@material-ui/icons';
 import { TodoProps } from '../../types/TodoType';
 
 const useStyles = makeStyles({
