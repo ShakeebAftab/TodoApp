@@ -17,7 +17,6 @@ const ThemeProvider: FC<ThemeProps> = ({ children }) => {
     const [theme, setTheme] = useState<Theme>(primaryTheme)
 
     const getTheme = () => {
-        console.log(temp)
         if(temp && temp.temp <= 20+273.15) {
             setTheme(coldTheme)
         } else if (temp && temp.temp > 20+273.15 && temp.temp < 40+273.15) {
