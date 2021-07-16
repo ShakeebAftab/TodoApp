@@ -7,3 +7,19 @@ export const primaryTheme = createTheme({
         }
     }
 })
+
+export const coldTheme = createTheme({
+    palette: {
+        background: {
+            default: 'blue'
+        }
+    }
+})
+
+export const hotTheme = createTheme({
+    palette: {
+        background: {
+            default: 'red'
+        }
+    }
+})

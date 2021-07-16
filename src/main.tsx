@@ -7,9 +7,9 @@ import '@fontsource/roboto'
 
 // Material UI Imports
 import { CssBaseline } from '@material-ui/core'
-import ThemeProvider from './ThemeProvider/ThemeProvider'
 
 // Custom Theme Provider
+import ThemeProvider from './ThemeProvider/ThemeProvider'
 
 ReactDOM.render(
   <React.StrictMode>
