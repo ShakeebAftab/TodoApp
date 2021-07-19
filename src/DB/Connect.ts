@@ -8,6 +8,7 @@ const connectDB = async () => {
         await connect(process.env.mongoURI ? process.env.mongoURI : "", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
+            useFindAndModify: false
         });
         console.log(`[DATABASE CONNECTED]`);
     } catch (error) {
