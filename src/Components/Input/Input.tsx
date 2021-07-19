@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Paper } from '@material-ui/core';
 import { Formik, Form, FormikHelpers } from 'formik';
 import * as Yup from 'yup';
 
 // Custom Components
 import TextFieldWrapper from './TextFieldWrapper'
+import axios from 'axios';
+import { InputType } from '../../types/Input';
 
 type Values = {
     body: String
 }
 
-type FormReset = {
-}
-
-const Input = () => {
+const Input: FC<InputType> = ({ todos, setTodos }) => {
     
     const initialState = {
         body: '',
@@ -24,7 +23,8 @@ const Input = () => {
     })
 
     const handleSubmit = async (values: Values, form: any) => {
-        console.log(`handleSubmit`);
+        const data = await axios.post(`${import.meta.env.VITE_API_URL}`, { body: `${values.body}`})
+        setTodos([data.data, ...todos])
         form();
     }
 

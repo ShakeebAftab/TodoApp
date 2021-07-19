@@ -1,9 +1,11 @@
 export type Todo = {
-    key: String,
-    checked: boolean,
+    _id: String,
+    completed: boolean,
     body: String
 }
 
 export type TodoProps = {
-    todo: Todo
+    todo: Todo,
+    todos: Todo[],
+    setTodos: React.Dispatch<React.SetStateAction<Todo[] | undefined>>
 }
