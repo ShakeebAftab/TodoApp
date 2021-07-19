@@ -30,8 +30,3 @@ const Header = () => {
 }
 
 export default Header
-
-// * USERNAME: 05242920021mibn 
-// * PASSWORD: 1234
-
-// 103 edit  
