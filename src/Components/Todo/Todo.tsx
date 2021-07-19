@@ -3,14 +3,15 @@ import { makeStyles, Card, CardHeader, Checkbox, IconButton, Typography } from '
 import DeleteIcon from '@material-ui/icons/Delete';
 import { TodoProps } from '../../types/TodoType';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
     root: {
         color: "#fff",
     },
     body: {
+        color: 'gray',
         textDecoration: 'line-through'
     }
-});
+}));
 
 const Todo: FC<TodoProps> = ({ todo }) => {
     const classes = useStyles();
@@ -22,7 +23,6 @@ const Todo: FC<TodoProps> = ({ todo }) => {
     const handleChange = () => {
         setCompleted(!completed)
     }
-
 
     return (
         <Card className={classes.root}>

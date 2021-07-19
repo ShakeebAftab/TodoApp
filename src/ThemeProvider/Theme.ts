@@ -7,11 +7,14 @@ export const primaryTheme = createTheme({
             main: blue[900]
         },
         secondary: {
-            main: blue[600]
+            main: blue[600],
         },
         background: {
             default: '#171717',
             paper: '#3b3b3b'
+        },
+        error: {
+            main: blue[400]
         }
     }
 })
@@ -27,7 +30,7 @@ export const hotTheme = createTheme({
         background: {
             default: '#171717',
             paper: '#3b3b3b'
-        }
+        },
     }
 })
 
