@@ -29,8 +29,4 @@ const Header = () => {
   );
 }
 
-<<<<<<< HEAD
 export default Header
-=======
-export default Header 
->>>>>>> c3a139d (Connected with backend)
